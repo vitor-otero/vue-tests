@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="page-content">
       <h1>Page 3</h1>
       <p>This is the content of Page 3 test.</p>
     </div>
@@ -10,6 +10,8 @@
 </script>
   
   <style scoped>
-  /* Add scoped styles for Page 3 */
+  .page-content {
+    margin-left: 20px; /* Adjust margin as needed */
+  }
   </style>
   
