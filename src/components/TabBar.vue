@@ -10,6 +10,7 @@
         class="tab-button"
         :class="{ active: activeTab === index }"
         @click="changeTab(index)"
+        :style="{ marginLeft: index === 0 ? '10px' : '10px' }"
       >
         {{ tab }}
       </button>
@@ -20,7 +21,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue'; // Import onMounted
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
@@ -32,6 +33,11 @@ function changeTab(index) {
     // Update the route when a tab is selected
     router.push(`/page${index + 1}`);
 }
+
+// Navigate to Page 1 upon component mount
+onMounted(() => {
+    router.push('/page1');
+});
 </script>
 
 <style scoped>
@@ -52,7 +58,6 @@ function changeTab(index) {
 
 .tab-button {
   padding: 10px 20px;
-  margin-right: 10px; /* Added margin between buttons */
   cursor: pointer;
   background-color: #222; /* Changed button background color to match black */
   color: #fff;
