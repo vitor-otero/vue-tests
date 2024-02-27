@@ -54,7 +54,7 @@ import axios from 'axios';
 
 const title = ref('Cits-core Configurations');
 const config = ref([]);
-const apiEndpoint = 'http://0.0.0.0:8001/config';
+const apiEndpoint = 'https://test3.v0t.org/config/';
 const newConfig = ref({ key: '', value: '' });
 const filterKey = ref('');
 const isLoading = ref(true);
