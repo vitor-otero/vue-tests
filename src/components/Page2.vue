@@ -1,17 +1,19 @@
 <template>
     <div class="page-content">
       <h1>Page 2</h1>
-      <p>This is the content of Page 2 test.</p>
+      <p>Page 2 test.</p>
     </div>
   </template>
   
 <script setup>
-// Add any logic specific to Page 2 if needed
+// Logic 
 </script>
   
   <style scoped>
   .page-content {
-    margin-left: 20px; /* Adjust margin as needed */
+    margin-left: 10px; 
+    margin-right: 10px;
+    /* background-color: rgb(60, 131, 115); */
   }
   </style>
   
