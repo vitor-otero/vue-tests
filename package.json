@@ -1,16 +1,20 @@
 {
-  "name": "vscode",
+  "name": "adm-webpage",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "serve": "serve -s dist"
   },
   "dependencies": {
+    "axios": "^1.6.7",
+    "serve": "^14.2.1",
     "vue": "^3.4.19",
-    "vue-router": "^4.3.0"
+    "vue-router": "^4.3.0",
+    "vuetify": "^3.4.0-beta.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
